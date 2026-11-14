@@ -1,0 +1,196 @@
+---
+title: Ziarnisto – świeżo palona kawa speciality z dostawą
+description: Palimy małe partie kawy co wtorek i wysyłamy dzień po paleniu. Kawy do przelewu, espresso i kawiarki, subskrypcja z rabatem 10%. Projekt demonstracyjny.
+page: home
+script: home
+---
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="assets/img/hero-1600.webp" srcset="assets/img/hero-800.webp 800w, assets/img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="1068" alt="" fetchpriority="high">
+      </div>
+      <div class="container">
+        <div class="hero-inner">
+          <span class="eyebrow">Palarnia kawy speciality · Kraków</span>
+          <h1 id="hero-title">Kawa palona we wtorek. U&nbsp;Ciebie w&nbsp;czwartek.</h1>
+          <p class="lead">Palimy małe partie raz w tygodniu i wysyłamy dzień po paleniu. Powiedz nam, jak parzysz, a dobierzemy kawę, która zasmakuje Ci od pierwszej filiżanki.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="sklep.html">Wybierz kawę</a>
+            <a class="btn btn-ghost" href="#subskrypcja">Subskrypcja −10%</a>
+          </div>
+          <ul class="hero-facts">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>4,9 z 1240 opinii</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>Darmowa dostawa od 149 zł</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Wysyłka 24 h po paleniu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metody" aria-labelledby="metody-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Zacznij od metody</span>
+            <h2 id="metody-title">Jak parzysz kawę?</h2>
+            <p>Każdą kawę palimy pod konkretny sposób parzenia, więc wystarczy, że wybierzesz swój.</p>
+          </div>
+          <a class="link-arrow" href="sklep.html">Wszystkie kawy <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="tiles">
+          <a class="tile" href="sklep.html?metoda=przelew">
+            <img src="assets/img/przelew-800.webp" width="800" height="1200" alt="" loading="lazy">
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            <div class="tile-body"><h3>Przelew</h3><p>Drip, V60 i Chemex. Jasne, owocowe kawy.</p></div>
+          </a>
+          <a class="tile" href="sklep.html?metoda=espresso">
+            <img src="assets/img/espresso-800.webp" width="800" height="1200" alt="" loading="lazy">
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            <div class="tile-body"><h3>Espresso</h3><p>Ekspres kolbowy i automatyczny.</p></div>
+          </a>
+          <a class="tile" href="sklep.html?metoda=kawiarka">
+            <img src="assets/img/kawiarka-800.webp" width="800" height="1200" alt="" loading="lazy">
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            <div class="tile-body"><h3>Kawiarka</h3><p>Klasyka na kuchence, z mlekiem albo bez.</p></div>
+          </a>
+          <a class="tile" href="sklep.html?bezkofeinowa=1">
+            <img src="assets/img/filizanka-800.webp" width="800" height="1422" alt="" loading="lazy">
+            <span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            <div class="tile-body"><h3>Bez kofeiny</h3><p>Cały smak na spokojny wieczór.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="polecane" aria-labelledby="polecane-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">W tym tygodniu</span>
+            <h2 id="polecane-title">Polecamy z ostatniego palenia</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Rodzaj polecanych kaw">
+            <button class="tab" type="button" role="tab" id="tab-bestseller" aria-controls="polecane-lista" aria-selected="true" data-filter="bestseller">Bestsellery</button>
+            <button class="tab" type="button" role="tab" id="tab-nowosc" aria-controls="polecane-lista" aria-selected="false" tabindex="-1" data-filter="nowosc">Nowości</button>
+            <button class="tab" type="button" role="tab" id="tab-promocja" aria-controls="polecane-lista" aria-selected="false" tabindex="-1" data-filter="promocja">Promocje</button>
+          </div>
+        </div>
+        <div class="grid grid-4" id="polecane-lista" role="tabpanel" aria-labelledby="tab-bestseller"></div>
+      </div>
+    </section>
+
+    <section class="section" id="subskrypcja" aria-labelledby="subskrypcja-title">
+      <div class="container">
+        <div class="band">
+          <img src="assets/img/ziarna-800.webp" width="800" height="1203" alt="" loading="lazy">
+          <div class="band-inner">
+            <div>
+              <span class="eyebrow">Subskrypcja</span>
+              <h2 id="subskrypcja-title">Kawa, która kończy się dopiero wtedy, gdy chcesz</h2>
+              <p>Wybierz kawę i rytm dostaw. Każdą paczkę palimy specjalnie dla Ciebie we wtorek przed wysyłką.</p>
+              <ul class="check-list">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>10% taniej przy każdej dostawie</li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Dostawa zawsze za darmo</li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Przerwa albo zmiana kawy jednym kliknięciem</li>
+              </ul>
+              <a class="btn btn-light" href="sklep.html">Ułóż subskrypcję</a>
+            </div>
+            <ol class="steps">
+              <li><div><strong>Wybierz kawę i mielenie</strong><span>Na karcie kawy zaznacz subskrypcję zamiast jednorazowego zakupu.</span></div></li>
+              <li><div><strong>Ustal rytm dostaw</strong><span>Co 2 albo co 4 tygodnie. Rytm zmienisz w każdej chwili.</span></div></li>
+              <li><div><strong>Odbieraj świeżą kawę</strong><span>Paczka wychodzi w środę, dzień po paleniu.</span></div></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="palarnia" aria-labelledby="palarnia-title">
+      <div class="container split">
+        <div class="split-media">
+          <img src="assets/img/palenie-800.webp" srcset="assets/img/palenie-800.webp 800w, assets/img/palenie-1600.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw" width="800" height="533" alt="Świeżo palone ziarna kawy w chłodnicy pieca" loading="lazy">
+        </div>
+        <div>
+          <span class="eyebrow">O palarni</span>
+          <h2 id="palarnia-title">Palimy co wtorek, w małych partiach</h2>
+          <p class="lead">Nasz piec mieści 12 kg kawy. Dzięki temu każda partia trafia do paczek najpóźniej dzień po paleniu, a na opakowaniu zawsze znajdziesz datę palenia.</p>
+          <p>Kupujemy kawę od importerów, którzy znają farmy z imienia i płacą rolnikom więcej niż giełda. Każdą nową kawę palimy próbnie kilka razy, zanim trafi do sklepu.</p>
+          <div class="stats">
+            <div class="stat"><strong>12 kg</strong><span>mieści nasz piec</span></div>
+            <div class="stat"><strong>24 h</strong><span>od palenia do wysyłki</span></div>
+            <div class="stat"><strong>7</strong><span>krajów pochodzenia</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parzenie" aria-labelledby="parzenie-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Poradnik</span>
+            <h2 id="parzenie-title">Jak parzyć, żeby smakowało</h2>
+            <p>Cztery przepisy, od których zaczynamy z każdą nową kawą.</p>
+          </div>
+        </div>
+        <div class="brew">
+          <div class="brew-photo">
+            <img src="assets/img/chemex-800.webp" width="800" height="1200" alt="Parzenie kawy w dzbanku z filtrem" loading="lazy">
+          </div>
+          <div class="brew-panel">
+            <div class="tabs" role="tablist" aria-label="Metoda parzenia">
+              <button class="tab" type="button" role="tab" id="przepis-tab-przelew" aria-controls="przepis" aria-selected="true" data-recipe="przelew">Przelew</button>
+              <button class="tab" type="button" role="tab" id="przepis-tab-espresso" aria-controls="przepis" aria-selected="false" tabindex="-1" data-recipe="espresso">Espresso</button>
+              <button class="tab" type="button" role="tab" id="przepis-tab-kawiarka" aria-controls="przepis" aria-selected="false" tabindex="-1" data-recipe="kawiarka">Kawiarka</button>
+              <button class="tab" type="button" role="tab" id="przepis-tab-french-press" aria-controls="przepis" aria-selected="false" tabindex="-1" data-recipe="french-press">French press</button>
+            </div>
+            <div id="przepis" role="tabpanel" aria-labelledby="przepis-tab-przelew" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="opinie" aria-labelledby="opinie-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Opinie</span>
+            <h2 id="opinie-title">Co mówią nasi klienci</h2>
+          </div>
+          <p class="rating-summary"><strong>4,9</strong><span><span class="stars" aria-hidden="true">★★★★★</span><br>średnia z 1240 opinii</span></p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <span class="stars" role="img" aria-label="5 na 5 gwiazdek">★★★★★</span>
+            <blockquote><p>„Pierwsza kawa z przelewu, która smakowała jak w kawiarni. Data palenia na paczce to świetna sprawa”.</p></blockquote>
+            <figcaption>Marta<span>Gdańsk, Etiopia Yirgacheffe</span></figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars" role="img" aria-label="5 na 5 gwiazdek">★★★★★</span>
+            <blockquote><p>„Mam subskrypcję Porannej co dwa tygodnie. Ani razu nie zabrakło mi kawy, a raz przesunąłem dostawę w dwie minuty”.</p></blockquote>
+            <figcaption>Paweł<span>Poznań, Mieszanka Poranna</span></figcaption>
+          </figure>
+          <figure class="review">
+            <span class="stars" role="img" aria-label="4 na 5 gwiazdek">★★★★☆</span>
+            <blockquote><p>„Zestaw degustacyjny kupiłam na prezent, a skończyło się na tym, że zamówiłam Kenię dla siebie”.</p></blockquote>
+            <figcaption>Ola<span>Kraków, Zestaw degustacyjny</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter">
+          <div>
+            <h2 id="newsletter-title">15 zł na pierwsze zamówienie</h2>
+            <p>W każdy poniedziałek piszemy, co palimy w tym tygodniu. Zapisz się, a od razu dostaniesz kod rabatowy.</p>
+          </div>
+          <form class="inline-form" id="newsletter" novalidate>
+            <label class="visually-hidden" for="newsletter-email">Adres e-mail</label>
+            <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Twój e-mail" required>
+            <button class="btn btn-dark" type="submit">Zapisz mnie</button>
+            <p class="form-note" id="newsletter-note" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>

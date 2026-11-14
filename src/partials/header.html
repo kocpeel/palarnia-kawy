@@ -1,0 +1,25 @@
+<header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Ziarnisto, strona główna">{{> logo}}</a>
+      <nav class="main-nav" id="menu" aria-label="Główne menu">
+        <a href="sklep.html"{{nav:sklep}}>Sklep</a>
+        <a href="index.html#subskrypcja">Subskrypcja</a>
+        <a href="index.html#parzenie">Jak parzyć</a>
+        <a href="index.html#palarnia">O palarni</a>
+        <a href="informacje.html"{{nav:informacje}}>Dostawa</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn" href="sklep.html#szukaj" aria-label="Szukaj kawy">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        </a>
+        <a class="icon-btn cart-link" href="koszyk.html" aria-label="Koszyk">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3" stroke-linecap="round"/></svg>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+        <button class="icon-btn menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Otwórz menu">
+          <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,20 @@
+{
+  "name": "palarnia-kawy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sklep internetowy palarni kawy. Projekt demonstracyjny na fikcyjnych danych.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "test": "node --test \"tests/*.test.js\"",
+    "e2e": "node scripts/build.mjs && node e2e/smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}

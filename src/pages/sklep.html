@@ -1,0 +1,80 @@
+---
+title: Sklep – wszystkie kawy | Ziarnisto
+description: Kawy speciality do przelewu, espresso, kawiarki i French pressu. Filtruj po metodzie parzenia, stopniu palenia i kraju. Projekt demonstracyjny.
+page: shop
+script: shop
+nav: sklep
+---
+    <div class="container page-head">
+      <nav class="breadcrumbs" aria-label="Okruszki">
+        <ol><li><a href="index.html">Start</a></li><li aria-current="page">Sklep</li></ol>
+      </nav>
+      <h1>Wszystkie kawy</h1>
+      <p>Wybierz metodę parzenia, stopień palenia albo kraj. Każda kawa w sklepie jest palona w tym tygodniu.</p>
+    </div>
+
+    <div class="container shop">
+      <details class="filters">
+        <summary>Filtry <span class="filter-count" id="aktywne-filtry" aria-label="aktywne filtry"></span></summary>
+        <form class="filters-body" id="filtry" role="search" aria-label="Filtry kaw">
+          <div class="field">
+            <label for="szukaj">Szukaj</label>
+            <div class="search">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+              <input id="szukaj" name="q" type="search" placeholder="np. czekolada, Kenia" autocomplete="off">
+            </div>
+          </div>
+          <fieldset>
+            <legend>Metoda parzenia</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="metoda" value="przelew"><span>Przelew</span></label>
+              <label class="choice"><input type="checkbox" name="metoda" value="espresso"><span>Espresso</span></label>
+              <label class="choice"><input type="checkbox" name="metoda" value="kawiarka"><span>Kawiarka</span></label>
+              <label class="choice"><input type="checkbox" name="metoda" value="french-press"><span>French press</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Stopień palenia</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="palenie" value="jasne"><span>Jasne</span></label>
+              <label class="choice"><input type="checkbox" name="palenie" value="srednie"><span>Średnie</span></label>
+              <label class="choice"><input type="checkbox" name="palenie" value="ciemne"><span>Ciemne</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="kraj">Kraj pochodzenia</label>
+            <select id="kraj" name="kraj"><option value="">Wszystkie kraje</option></select>
+          </div>
+          <fieldset>
+            <legend>Pokaż tylko</legend>
+            <div class="stack">
+              <label class="checkbox"><input type="checkbox" name="promocje" value="1"> Promocje</label>
+              <label class="checkbox"><input type="checkbox" name="bezkofeinowa" value="1"> Bez kofeiny</label>
+            </div>
+          </fieldset>
+          <button class="link-btn" type="reset">Wyczyść filtry</button>
+        </form>
+      </details>
+
+      <section aria-labelledby="wyniki-title">
+        <h2 class="visually-hidden" id="wyniki-title">Wyniki</h2>
+        <div class="toolbar">
+          <p class="result-count" id="liczba" aria-live="polite"></p>
+          <div class="field">
+            <label for="sortowanie">Sortuj</label>
+            <select id="sortowanie" name="sort" form="filtry">
+              <option value="polecane">Polecane</option>
+              <option value="cena-rosnaco">Cena: od najniższej</option>
+              <option value="cena-malejaco">Cena: od najwyższej</option>
+              <option value="nazwa">Nazwa: A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid" id="lista"></div>
+        <div class="empty" id="pusto" hidden>
+          <h2>Nie mamy takiej kawy</h2>
+          <p>Spróbuj zmienić filtry albo wpisać inne słowo.</p>
+          <button class="btn btn-dark" type="button" id="wyczysc">Wyczyść filtry</button>
+        </div>
+      </section>
+    </div>
